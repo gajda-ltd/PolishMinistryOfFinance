@@ -5,7 +5,7 @@ namespace PolishMinistryOfFinance.Models
 
     public class CacheContext : DbContext
     {
-        private readonly static string connectionString = "Server=192.168.100.103;Database=PolishMinistryOfFinance;User Id=sa;Password=Kur0wska!";
+        private readonly static string connectionString = "Server=192.168.100.103;Database=PolishMinistryOfFinance;User Id=sa;Password=xx";
         public DbSet<TaxIdentificationNumberEntity> TaxIdentificationNumbers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
