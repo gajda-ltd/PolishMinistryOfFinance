@@ -12,7 +12,7 @@
 
             service.Refresh();
 
-            var examples = new List<string> { "8721124883", "8133379681", "5241019127" };
+            var examples = new List<string> { "8721124883", "8133379681", "8970012657","8130268515","8970012657","7960000362" };
 
             foreach (var example in examples)
             {

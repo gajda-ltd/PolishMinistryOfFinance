@@ -5,10 +5,12 @@ namespace PolishMinistryOfFinance.Models
 
     public class CacheContext : DbContext
     {
+        private readonly static string connectionString = "Server=192.168.100.103;Database=PolishMinistryOfFinance;User Id=sa;Password=Kur0wska!";
         public DbSet<TaxIdentificationNumberEntity> TaxIdentificationNumbers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=cache.db");
+            optionsBuilder.UseSqlServer(connectionString);
+            //optionsBuilder.UseSqlite("Data Source=cache.db");
         }
     }
 }
